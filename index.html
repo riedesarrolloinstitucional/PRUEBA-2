@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#103c5b" />
+  <meta name="description" content="RIE Equinoterapia I.A.P. acompaña el desarrollo de niñas, niños y adolescentes mediante equinoterapia, fisioterapia, lenguaje, integración sensorial y capacitación en Metepec, Estado de México." />
+  <title>RIE Equinoterapia | Cabalgando por una vida mejor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { navy: '#103C5B', ocean: '#16648A', skysoft: '#EAF5FA', cream: '#F9FAF5', mint: '#DCF5E9', leaf: '#16876A', ink: '#20374A' },
+        fontFamily: { display: ['Plus Jakarta Sans','sans-serif'], body: ['DM Sans','sans-serif'] },
+        boxShadow: { soft: '0 18px 50px rgba(16,60,91,.10)' }
+      }}
+    };
+  </script>
+  <style>
+    html { scroll-behavior:smooth; scroll-padding-top:94px; }
+    body { font-family:'DM Sans',sans-serif; }
+    h1,h2,h3,h4 { font-family:'Plus Jakarta Sans',sans-serif; }
+    ::selection { background:#bde9d9; color:#103c5b; }
+    .hero-pattern { background-image:radial-gradient(circle at 15% 15%,rgba(178,225,242,.55),transparent 30%),radial-gradient(circle at 90% 85%,rgba(170,232,202,.48),transparent 32%); }
+    .image-cover { width:100%; height:100%; object-fit:cover; }
+    .service-card { transition:transform .25s ease,box-shadow .25s ease; }
+    .service-card:hover { transform:translateY(-5px); box-shadow:0 18px 50px rgba(16,60,91,.13); }
+    .service-card[hidden] { display:none !important; }
+    :focus-visible { outline:3px solid #16a086;outline-offset:3px; }
+    @media (prefers-reduced-motion:reduce) { html{scroll-behavior:auto} *,*::before,*::after{transition:none!important;animation:none!important} }
+  </style>
+</head>
+<body class="bg-cream text-ink antialiased">
+  <a href="#contenido" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[100] focus:rounded-xl focus:bg-white focus:p-3">Saltar al contenido</a>
+  <header id="header" class="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-white/95 backdrop-blur-lg">
+    <div class="mx-auto flex h-[76px] max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
+      <a href="#inicio" class="flex items-center gap-3" aria-label="RIE Equinoterapia, ir al inicio">
+        <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-navy text-white shadow-sm" aria-hidden="true">
+          <svg viewBox="0 0 48 48" class="h-8 w-8" fill="none"><path d="M11 37c4-8 6-16 12-23l6 5 7-2-1 8-7 4-3 8" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 26c2 3 5 5 10 6M28 20l3 1" stroke="#A2E8CE" stroke-width="2.5" stroke-linecap="round"/></svg>
+        </div>
+        <span class="leading-tight"><span class="block font-display text-lg font-extrabold tracking-tight text-navy">RIE <span class="text-leaf">Equinoterapia</span></span><span class="block text-[10px] font-bold uppercase tracking-[.23em] text-slate-500">Institución de Asistencia Privada</span></span>
+      </a>
+      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegación principal">
+        <a class="text-sm font-semibold transition hover:text-leaf" href="#inicio">Inicio</a><a class="text-sm font-semibold transition hover:text-leaf" href="#nosotros">Quiénes somos</a><a class="text-sm font-semibold transition hover:text-leaf" href="#servicios">Áreas de atención</a><a class="text-sm font-semibold transition hover:text-leaf" href="#impacto">Nuestro impacto</a><a class="text-sm font-semibold transition hover:text-leaf" href="#contacto">Contacto</a>
+      </nav>
+      <div class="hidden lg:block"><a class="inline-flex items-center justify-center gap-2 rounded-full bg-leaf px-6 py-3 text-sm font-bold text-white transition hover:bg-[#0c6b51]" href="https://wa.me/527293507809?text=Hola%2C%20quiero%20informes%20sobre%20los%20servicios%20de%20RIE%20Equinoterapia." target="_blank" rel="noopener noreferrer">Solicitar informes <span aria-hidden="true">↗</span></a></div>
+      <button id="menuButton" class="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-navy lg:hidden" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Abrir menú"><svg id="menuIcon" viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+    <nav id="mobileMenu" class="hidden border-t border-slate-100 bg-white px-5 pb-6 pt-3 shadow-lg lg:hidden" aria-label="Navegación móvil">
+      <div class="mx-auto flex max-w-7xl flex-col gap-1"><a class="mobile-link rounded-xl px-4 py-3 font-semibold hover:bg-skysoft" href="#inicio">Inicio</a><a class="mobile-link rounded-xl px-4 py-3 font-semibold hover:bg-skysoft" href="#nosotros">Quiénes somos</a><a class="mobile-link rounded-xl px-4 py-3 font-semibold hover:bg-skysoft" href="#servicios">Áreas de atención</a><a class="mobile-link rounded-xl px-4 py-3 font-semibold hover:bg-skysoft" href="#impacto">Nuestro impacto</a><a class="mobile-link rounded-xl px-4 py-3 font-semibold hover:bg-skysoft" href="#contacto">Contacto</a><a class="mt-3 rounded-xl bg-leaf px-4 py-3 text-center font-bold text-white" href="https://wa.me/527293507809?text=Hola%2C%20quiero%20informes%20sobre%20RIE%20Equinoterapia." target="_blank" rel="noopener noreferrer">Enviar WhatsApp ↗</a></div>
+    </nav>
+  </header>
+
+  <main id="contenido" class="pt-[76px]">
+    <section id="inicio" class="hero-pattern relative overflow-hidden bg-skysoft">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-5 py-14 sm:px-8 md:py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-10 lg:py-24">
+        <div class="relative z-10"><span class="inline-flex items-center gap-2 rounded-full border border-leaf/20 bg-white px-4 py-2 text-xs font-bold tracking-wide text-leaf sm:text-sm"><span class="h-2 w-2 rounded-full bg-leaf"></span> Desarrollo • Inclusión • Bienestar</span>
+          <h1 class="mt-7 max-w-2xl font-display text-4xl font-extrabold leading-[1.12] tracking-tight text-navy sm:text-5xl lg:text-[4rem]">Cada pequeño avance es una <span class="text-leaf">gran conquista.</span></h1>
+          <p class="mt-6 max-w-xl text-base leading-8 text-slate-600 sm:text-lg">Acompañamos a niñas, niños y adolescentes con discapacidad y neurodivergencias mediante atención integral, especializada y centrada en sus capacidades.</p>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row"><a class="inline-flex items-center justify-center rounded-full bg-leaf px-7 py-4 font-bold text-white shadow-lg shadow-leaf/15 transition hover:bg-[#0b6f53]" href="#servicios">Conoce nuestros servicios <span class="ml-2" aria-hidden="true">→</span></a><a class="inline-flex items-center justify-center rounded-full border border-navy/15 bg-white px-7 py-4 font-bold text-navy transition hover:border-leaf hover:text-leaf" href="#contacto">Contáctanos</a></div>
+          <p class="mt-7 text-sm font-semibold text-slate-500">Metepec, Estado de México · Desde 2010</p>
+        </div>
+        <div class="relative mx-auto w-full max-w-[550px]"><div class="absolute -inset-4 rotate-3 rounded-[2.5rem] bg-[#ccecd9]"></div><div class="relative aspect-[5/5.4] overflow-hidden rounded-[2rem] shadow-soft sm:aspect-[6/5] lg:aspect-[5/5.4]"><img class="image-cover" src="https://images.unsplash.com/photo-1534307671554-38a4d86f0d0c?auto=format&fit=crop&w=1200&q=85" alt="Caballo en un entorno natural, símbolo de la equinoterapia" fetchpriority="high" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1598974357801-cbca100e65d3?auto=format&fit=crop&w=1200&q=85'" /><div class="absolute inset-0 bg-gradient-to-t from-navy/35 via-transparent to-transparent"></div></div><div class="absolute -bottom-6 -left-3 max-w-[235px] rounded-2xl bg-white p-4 shadow-soft sm:-left-7 sm:p-5"><span class="block text-2xl" aria-hidden="true">💚</span><p class="mt-1 font-display text-sm font-extrabold text-navy">Cabalgando por una vida mejor</p><p class="mt-1 text-xs text-slate-500">Juntos, hacemos posibles nuevas oportunidades.</p></div></div>
+      </div>
+    </section>
+
+    <section class="bg-white py-14 sm:py-16" aria-labelledby="actualidad-heading"><div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10"><div class="grid items-center gap-7 rounded-[2rem] bg-gradient-to-r from-navy to-ocean px-6 py-8 text-white md:grid-cols-[1fr_auto] md:px-12 md:py-10"><div><span class="inline-block rounded-full bg-white/15 px-3 py-1 text-xs font-bold uppercase tracking-wider text-mint">Conoce RIE</span><h2 id="actualidad-heading" class="mt-3 font-display text-2xl font-extrabold sm:text-3xl">Un espacio para crecer, aprender y participar.</h2><p class="mt-3 max-w-2xl text-sm leading-7 text-blue-100 sm:text-base">Descubre nuestras terapias, capacitaciones y la atención que brindamos a las familias. Pregunta por el proceso de ingreso y la disponibilidad de servicios.</p></div><a class="inline-flex shrink-0 items-center justify-center rounded-full bg-mint px-6 py-4 font-bold text-navy transition hover:bg-white" href="https://wa.me/527293507809?text=Hola%2C%20quiero%20conocer%20el%20proceso%20de%20ingreso%20y%20los%20servicios%20disponibles%20en%20RIE." target="_blank" rel="noopener noreferrer">Pedir información ↗</a></div></div></section>
+
+    <section id="nosotros" class="py-20 sm:py-24"><div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-20 lg:px-10"><div class="relative"><div class="aspect-[5/4] overflow-hidden rounded-[2rem] bg-skysoft shadow-soft"><img class="image-cover" src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=1200&q=85" alt="Caballos en un campo, representando el vínculo con los equinos" loading="lazy" /></div><div class="absolute -bottom-5 right-5 rounded-2xl bg-white px-6 py-4 shadow-soft"><span class="block font-display text-3xl font-extrabold text-leaf">2010</span><span class="text-sm font-semibold text-slate-600">Año de fundación</span></div></div><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-leaf">Quiénes somos</span><h2 class="mt-4 font-display text-3xl font-extrabold leading-tight text-navy sm:text-4xl">Unimos conocimiento, sensibilidad y compromiso social.</h2><p class="mt-6 leading-8 text-slate-600">En <strong>Rehabilitación Infantil Equinoterapéutica I.A.P.</strong> trabajamos desde 2010 para favorecer el desarrollo y la calidad de vida de niñas, niños y adolescentes con discapacidad.</p><p class="mt-4 leading-8 text-slate-600">Nuestra atención integra distintas disciplinas terapéuticas, con la equinoterapia como uno de sus ejes, un enfoque basado en derechos humanos y la participación activa de las familias.</p><div class="mt-7 grid gap-4 sm:grid-cols-2"><div class="rounded-2xl border border-[#dce8ec] bg-white p-5"><div class="text-2xl" aria-hidden="true">🐴</div><h3 class="mt-3 font-bold text-navy">Atención integral</h3><p class="mt-1 text-sm leading-6 text-slate-600">Estrategias adaptadas a cada persona.</p></div><div class="rounded-2xl border border-[#dce8ec] bg-white p-5"><div class="text-2xl" aria-hidden="true">🤝</div><h3 class="mt-3 font-bold text-navy">Trabajo con familias</h3><p class="mt-1 text-sm leading-6 text-slate-600">Acompañamiento, orientación e inclusión.</p></div></div></div></div></section>
+
+    <section id="servicios" class="bg-skysoft/70 py-20 sm:py-24"><div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10"><div class="mx-auto max-w-2xl text-center"><span class="text-sm font-extrabold uppercase tracking-[.2em] text-leaf">Áreas de atención</span><h2 class="mt-3 font-display text-3xl font-extrabold text-navy sm:text-4xl">Servicios que acompañan cada etapa</h2><p class="mt-4 leading-7 text-slate-600">Conoce algunas de nuestras áreas de atención y solicita información sobre valoraciones, horarios y cuotas de recuperación.</p></div>
+      <div class="mx-auto mt-9 flex max-w-4xl flex-col items-center gap-4"><div class="relative w-full max-w-lg"><svg viewBox="0 0 24 24" class="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-slate-400" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m16 16 5 5"/></svg><input id="serviceSearch" type="search" placeholder="Busca una terapia o capacitación..." aria-label="Buscar servicios" class="w-full rounded-full border border-slate-200 bg-white py-3.5 pl-12 pr-5 text-sm shadow-sm outline-none focus:border-leaf" /></div><div id="filters" class="flex flex-wrap justify-center gap-2" aria-label="Filtrar servicios"><button class="filter-btn rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white" data-filter="todos" type="button" aria-pressed="true">Todos</button><button class="filter-btn rounded-full bg-white px-5 py-2.5 text-sm font-bold text-navy" data-filter="terapias" type="button" aria-pressed="false">Terapias</button><button class="filter-btn rounded-full bg-white px-5 py-2.5 text-sm font-bold text-navy" data-filter="capacitacion" type="button" aria-pressed="false">Capacitaciones</button></div></div>
+      <div id="servicesGrid" class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="service-card overflow-hidden rounded-[1.5rem] bg-white shadow-sm" data-category="terapias" data-search="equinoterapia caballos terapia equina"><div class="h-52 overflow-hidden bg-slate-100"><img class="image-cover" src="https://images.unsplash.com/photo-1553284965-a6b5e1f0a0a1?auto=format&fit=crop&w=900&q=80" alt="Caballo relacionado con las actividades de equinoterapia" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=900&q=80'" /></div><div class="p-6"><span class="text-xs font-bold uppercase tracking-widest text-leaf">Terapia</span><h3 class="mt-2 font-display text-xl font-extrabold text-navy">Equinoterapia</h3><p class="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">Intervenciones terapéuticas asistidas con equinos que forman parte del proceso integral de rehabilitación.</p><p class="mt-5 text-sm font-bold text-navy">Cuota: <span class="font-medium text-slate-500">Consultar en RIE</span></p><a data-whatsapp-service="Equinoterapia" href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-leaf px-5 py-3 font-bold text-white transition hover:bg-[#0b6f53]">Mensaje por WhatsApp ↗</a></div></article>
+        <article class="service-card overflow-hidden rounded-[1.5rem] bg-white shadow-sm" data-category="terapias" data-search="fisioterapia movimiento rehabilitacion fisica"><div class="flex h-52 items-center justify-center overflow-hidden bg-[#e4f2f4]"><img class="image-cover" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80" alt="Profesional de salud en un entorno clínico" loading="lazy" /></div><div class="p-6"><span class="text-xs font-bold uppercase tracking-widest text-leaf">Terapia</span><h3 class="mt-2 font-display text-xl font-extrabold text-navy">Fisioterapia</h3><p class="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">Atención especializada para favorecer la movilidad, la funcionalidad y el desarrollo de habilidades físicas.</p><p class="mt-5 text-sm font-bold text-navy">Cuota: <span class="font-medium text-slate-500">Consultar en RIE</span></p><a data-whatsapp-service="Fisioterapia" href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-leaf px-5 py-3 font-bold text-white transition hover:bg-[#0b6f53]">Mensaje por WhatsApp ↗</a></div></article>
+        <article class="service-card overflow-hidden rounded-[1.5rem] bg-white shadow-sm" data-category="terapias" data-search="terapia lenguaje comunicacion habla comunicacion aumentativa alternativa caa"><div class="h-52 overflow-hidden bg-[#e4f2f4]"><img class="image-cover" src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80" alt="Materiales educativos para favorecer la comunicación y el aprendizaje" loading="lazy" /></div><div class="p-6"><span class="text-xs font-bold uppercase tracking-widest text-leaf">Terapia</span><h3 class="mt-2 font-display text-xl font-extrabold text-navy">Comunicación y Lenguaje</h3><p class="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">Estrategias para fortalecer la comunicación, la comprensión y la expresión, incluyendo apoyos de CAA.</p><p class="mt-5 text-sm font-bold text-navy">Cuota: <span class="font-medium text-slate-500">Consultar en RIE</span></p><a data-whatsapp-service="Comunicación y Lenguaje" href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-leaf px-5 py-3 font-bold text-white transition hover:bg-[#0b6f53]">Mensaje por WhatsApp ↗</a></div></article>
+        <article class="service-card overflow-hidden rounded-[1.5rem] bg-white shadow-sm" data-category="terapias" data-search="integracion sensorial estimulacion sensorial procesamiento sensorial"><div class="h-52 overflow-hidden bg-[#e4f2f4]"><img class="image-cover" src="https://images.unsplash.com/photo-1566004100631-35d015d6a491?auto=format&fit=crop&w=900&q=80" alt="Material de juego y aprendizaje sensorial" loading="lazy" /></div><div class="p-6"><span class="text-xs font-bold uppercase tracking-widest text-leaf">Terapia</span><h3 class="mt-2 font-display text-xl font-extrabold text-navy">Integración Sensorial</h3><p class="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">Experiencias y actividades terapéuticas orientadas al procesamiento sensorial y la participación cotidiana.</p><p class="mt-5 text-sm font-bold text-navy">Cuota: <span class="font-medium text-slate-500">Consultar en RIE</span></p><a data-whatsapp-service="Integración Sensorial" href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-leaf px-5 py-3 font-bold text-white transition hover:bg-[#0b6f53]">Mensaje por WhatsApp ↗</a></div></article>
+        <article class="service-card overflow-hidden rounded-[1.5rem] bg-white shadow-sm" data-category="capacitacion" data-search="capacitaciones talleres docentes familias cursos formacion"><div class="h-52 overflow-hidden bg-[#e4f2f4]"><img class="image-cover" src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80" alt="Personas participando en un espacio de capacitación" loading="lazy" /></div><div class="p-6"><span class="text-xs font-bold uppercase tracking-widest text-leaf">Formación</span><h3 class="mt-2 font-display text-xl font-extrabold text-navy">Capacitaciones</h3><p class="mt-3 min-h-[72px] text-sm leading-6 text-slate-600">Talleres y espacios formativos para familias, docentes y personas interesadas en la inclusión.</p><p class="mt-5 text-sm font-bold text-navy">Costo: <span class="font-medium text-slate-500">Según convocatoria</span></p><a data-whatsapp-service="Capacitaciones" href="#" class="mt-4 inline-flex w-full items-center justify-center rounded-full bg-leaf px-5 py-3 font-bold text-white transition hover:bg-[#0b6f53]">Mensaje por WhatsApp ↗</a></div></article>
+      </div><p id="emptyState" class="mt-10 hidden rounded-2xl bg-white p-8 text-center text-slate-600" role="status">No encontramos servicios con esa búsqueda. Intenta con otra palabra.</p><p id="resultsCount" class="mt-6 text-center text-sm text-slate-500" aria-live="polite">Mostrando 5 servicios</p></div></section>
+
+    <section id="impacto" class="py-20 sm:py-24"><div class="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10"><div class="mx-auto max-w-2xl text-center"><span class="text-sm font-extrabold uppercase tracking-[.2em] text-leaf">Nuestro impacto</span><h2 class="mt-3 font-display text-3xl font-extrabold text-navy sm:text-4xl">Personas en el centro de todo lo que hacemos</h2><p class="mt-4 text-slate-600">Construimos oportunidades de desarrollo con el compromiso de especialistas, familias, comunidad y aliados.</p></div><div class="mt-11 grid gap-5 sm:grid-cols-3"><div class="rounded-3xl bg-skysoft p-8 text-center"><div class="font-display text-4xl font-extrabold text-navy">2010</div><p class="mt-2 text-sm font-semibold text-slate-600">Inicio de nuestra historia</p></div><div class="rounded-3xl bg-mint/70 p-8 text-center"><div class="font-display text-4xl font-extrabold text-navy">Integral</div><p class="mt-2 text-sm font-semibold text-slate-600">Atención multidisciplinaria</p></div><div class="rounded-3xl bg-skysoft p-8 text-center"><div class="font-display text-4xl font-extrabold text-navy">Familias</div><p class="mt-2 text-sm font-semibold text-slate-600">Parte fundamental del proceso</p></div></div><div class="mt-9 text-center"><a href="https://wa.me/527293507809?text=Hola%2C%20me%20interesa%20conocer%20c%C3%B3mo%20apoyar%20a%20RIE%20Equinoterapia." target="_blank" rel="noopener noreferrer" class="inline-flex rounded-full border-2 border-leaf px-7 py-3.5 font-bold text-leaf transition hover:bg-leaf hover:text-white">Quiero conocer cómo apoyar ↗</a></div></div></section>
+
+    <section id="contacto" class="bg-[#eaf4f5] py-20 sm:py-24"><div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:px-10"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-leaf">Contacto</span><h2 class="mt-3 font-display text-3xl font-extrabold text-navy sm:text-4xl">Estamos para escucharte.</h2><p class="mt-5 max-w-lg leading-8 text-slate-600">¿Quieres conocer el proceso de ingreso, recibir información de nuestras terapias o saber más sobre las capacitaciones? Escríbenos y con gusto te orientaremos.</p><div class="mt-9 space-y-5"><div class="flex items-start gap-4"><span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-xl" aria-hidden="true">📍</span><div><h3 class="font-bold text-navy">Ubicación</h3><p class="mt-1 text-slate-600">Metepec, Estado de México, México</p><a href="https://www.google.com/maps/search/?api=1&query=RIE+Equinoterapia+Metepec" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-sm font-bold text-leaf underline underline-offset-2">Buscar en Google Maps ↗</a></div></div><div class="flex items-start gap-4"><span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-xl" aria-hidden="true">🕒</span><div><h3 class="font-bold text-navy">Horarios de atención</h3><p class="mt-1 text-slate-600">Lunes a viernes: 9:00 a 18:00 h<br />Sábados: 9:00 a 13:00 h</p></div></div><div class="flex items-start gap-4"><span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-xl" aria-hidden="true">☎️</span><div><h3 class="font-bold text-navy">Teléfonos</h3><p class="mt-1 text-slate-600">Oficina: <a class="hover:text-leaf" href="tel:+527222710520">722 271 0520</a><br />Trabajo Social / WhatsApp: <a class="hover:text-leaf" href="tel:+527293507809">729 350 7809</a></p></div></div></div></div>
+      <div class="rounded-[2rem] bg-white p-6 shadow-soft sm:p-9"><h3 class="font-display text-2xl font-extrabold text-navy">Envíanos un mensaje</h3><p class="mt-2 text-sm leading-6 text-slate-600">Completa los datos y abriremos WhatsApp con tu mensaje listo para enviar. No almacenamos esta información en la página.</p><form id="contactForm" class="mt-6 space-y-5"><div><label for="name" class="mb-2 block text-sm font-bold text-navy">Tu nombre</label><input id="name" name="name" type="text" required maxlength="80" autocomplete="name" placeholder="Escribe tu nombre" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:border-leaf" /></div><div><label for="topic" class="mb-2 block text-sm font-bold text-navy">¿Qué te interesa?</label><select id="topic" name="topic" class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:border-leaf"><option value="Información general">Información general</option><option value="Equinoterapia">Equinoterapia</option><option value="Fisioterapia">Fisioterapia</option><option value="Comunicación y Lenguaje">Comunicación y Lenguaje</option><option value="Integración Sensorial">Integración Sensorial</option><option value="Capacitaciones">Capacitaciones</option><option value="Donativos y alianzas">Donativos y alianzas</option></select></div><div><label for="message" class="mb-2 block text-sm font-bold text-navy">Tu mensaje</label><textarea id="message" name="message" rows="4" maxlength="1000" required placeholder="Cuéntanos brevemente cómo podemos ayudarte" class="w-full resize-y rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:border-leaf"></textarea></div><button type="submit" class="w-full rounded-full bg-leaf px-7 py-4 font-bold text-white transition hover:bg-[#0b6f53]">Continuar en WhatsApp ↗</button><p class="text-xs leading-5 text-slate-500">WhatsApp se abrirá en otra pestaña. El envío final del mensaje se realiza desde esa aplicación.</p></form></div></div></section>
+  </main>
+  <footer class="bg-navy py-11 text-white"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-5 sm:px-8 md:flex-row md:items-center lg:px-10"><div><p class="font-display text-xl font-extrabold">RIE <span class="text-[#a6ebcd]">Equinoterapia</span></p><p class="mt-2 text-sm text-blue-100">Cabalgando por una vida mejor.</p><p class="mt-3 max-w-md text-xs leading-6 text-blue-200">Rehabilitación Infantil Equinoterapéutica I.A.P. · Metepec, Estado de México.</p></div><div class="flex flex-wrap gap-5 text-sm font-semibold"><a href="#inicio" class="hover:text-mint">Inicio</a><a href="#servicios" class="hover:text-mint">Servicios</a><a href="#contacto" class="hover:text-mint">Contacto</a><a href="https://www.facebook.com/RIEI.A.P/" target="_blank" rel="noopener noreferrer" class="hover:text-mint">Facebook ↗</a></div></div><div class="mx-auto mt-8 max-w-7xl border-t border-white/15 px-5 pt-6 text-xs text-blue-200 sm:px-8 lg:px-10">© <span id="year"></span> RIE Equinoterapia I.A.P. · Sitio informativo.</div></footer>
+
+  <a id="floatingWhatsApp" class="fixed bottom-5 right-5 z-40 flex h-16 w-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-[0_12px_32px_rgba(0,0,0,.22)] transition hover:scale-105 sm:bottom-7 sm:right-7" href="https://wa.me/527293507809?text=Hola%2C%20quiero%20informes%20sobre%20RIE%20Equinoterapia." target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp para pedir informes" title="Escríbenos por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-9 w-9" fill="currentColor"><path d="M16.01 2.4a13.45 13.45 0 0 0-11.6 20.25L2.6 29.4l6.93-1.81a13.46 13.46 0 1 0 6.48-25.19Zm0 24.46a10.98 10.98 0 0 1-5.61-1.54l-.4-.24-4.11 1.08L7 22.15l-.26-.41a10.98 10.98 0 1 1 9.27 5.12Zm6.03-8.22c-.33-.17-1.95-.97-2.26-1.08-.3-.11-.52-.17-.74.17-.22.33-.85 1.08-1.04 1.3-.19.22-.38.25-.71.08-.33-.17-1.4-.52-2.66-1.64-.98-.87-1.64-1.95-1.83-2.28-.19-.33-.02-.51.14-.67.15-.15.33-.38.5-.58.16-.19.22-.33.33-.55.11-.22.05-.41-.03-.58-.08-.17-.74-1.79-1.02-2.45-.27-.64-.54-.55-.74-.56h-.63c-.22 0-.58.08-.88.41-.3.33-1.16 1.14-1.16 2.78s1.19 3.22 1.36 3.44c.16.22 2.34 3.57 5.67 5.01.79.34 1.41.55 1.89.7.8.25 1.53.21 2.11.13.64-.1 1.95-.8 2.23-1.58.27-.77.27-1.44.19-1.58-.08-.14-.3-.22-.63-.39Z"/></svg></a>
+  <script>
+    (() => {
+      'use strict';
+      const WHATSAPP = '527293507809';
+      const waUrl = message => `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(message)}`;
+      document.querySelectorAll('[data-whatsapp-service]').forEach(link => {
+        const service = link.dataset.whatsappService;
+        link.href = waUrl(`Hola, quiero informes sobre ${service} en RIE Equinoterapia. ¿Me podrían compartir los requisitos, horarios y cuotas?`);
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        link.setAttribute('aria-label', `Solicitar informes de ${service} por WhatsApp`);
+      });
+      const menuButton = document.getElementById('menuButton');
+      const mobileMenu = document.getElementById('mobileMenu');
+      function setMenu(open) {
+        mobileMenu.classList.toggle('hidden', !open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+        document.getElementById('menuIcon').innerHTML = open ? '<path d="M5 5l14 14M19 5 5 19"/>' : '<path d="M4 7h16M4 12h16M4 17h16"/>';
+      }
+      menuButton.addEventListener('click', () => setMenu(mobileMenu.classList.contains('hidden')));
+      document.querySelectorAll('.mobile-link').forEach(link => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape') setMenu(false); });
+      window.addEventListener('resize', () => { if (window.innerWidth >= 1024) setMenu(false); });
+      const cards = [...document.querySelectorAll('.service-card')];
+      const filters = [...document.querySelectorAll('.filter-btn')];
+      const search = document.getElementById('serviceSearch');
+      const counter = document.getElementById('resultsCount');
+      const empty = document.getElementById('emptyState');
+      let activeFilter = 'todos';
+      const normalize = text => text.toLocaleLowerCase('es').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      function applyFilters() {
+        const term = normalize(search.value.trim());
+        let visible = 0;
+        cards.forEach(card => {
+          const categoryMatch = activeFilter === 'todos' || card.dataset.category === activeFilter;
+          const searchMatch = normalize(card.dataset.search + ' ' + card.textContent).includes(term);
+          card.hidden = !(categoryMatch && searchMatch);
+          if (!card.hidden) visible++;
+        });
+        empty.classList.toggle('hidden', visible !== 0);
+        counter.textContent = `Mostrando ${visible} ${visible === 1 ? 'servicio' : 'servicios'}`;
+      }
+      filters.forEach(button => button.addEventListener('click', () => {
+        activeFilter = button.dataset.filter;
+        filters.forEach(filter => {
+          const active = filter === button;
+          filter.setAttribute('aria-pressed', String(active));
+          filter.classList.toggle('bg-navy', active);
+          filter.classList.toggle('text-white', active);
+          filter.classList.toggle('bg-white', !active);
+          filter.classList.toggle('text-navy', !active);
+        });
+        applyFilters();
+      }));
+      search.addEventListener('input', applyFilters);
+      document.getElementById('contactForm').addEventListener('submit', event => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        if (!form.reportValidity()) return;
+        const name = form.elements.name.value.trim();
+        const topic = form.elements.topic.value;
+        const message = form.elements.message.value.trim();
+        if (!name || !message) return;
+        const url = waUrl(`Hola, soy ${name}.\nTema: ${topic}.\n${message}`);
+        const opened = window.open(url, '_blank', 'noopener,noreferrer');
+        if (!opened) window.location.href = url;
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+      applyFilters();
+    })();
+  </script>
+</body>
+</html>
